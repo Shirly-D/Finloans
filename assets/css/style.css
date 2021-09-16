@@ -101,6 +101,7 @@ body {
 
 a {
   display: inline-block;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -116,7 +117,116 @@ li {
   margin: 0 auto;
 }
 
+.header .menu ul:first-child, .header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+}
 .header .wrapper {
   max-width: 1518px;
   width: 94%;
+}
+.header .header__logo {
+  width: 12%;
+  display: inline-block;
+}
+.header .header__logo a {
+  width: 100%;
+}
+.header .header__logo a img {
+  width: 29%;
+  border: 1px solid #33D2D3;
+  border-radius: 50%;
+}
+.header .header__logo a span {
+  margin-left: 5%;
+  display: inline-block;
+  vertical-align: middle;
+  color: #FDFDFD;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.header .menu {
+  width: 35%;
+  margin-left: 3%;
+}
+.header .menu .menu__hamburger {
+  display: none;
+}
+.header .menu ul:first-child {
+  margin-top: 8px;
+}
+.header .menu ul:first-child li a {
+  padding: 6px;
+  color: #F4FCF8;
+  font-size: 15px;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.header .menu ul:first-child li a:hover {
+  color: #33D2D3;
+}
+.header .menu ul:first-child .menu__sub-menu {
+  width: 11%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.header .menu ul:first-child .menu__sub-menu a::after {
+  content: "\f107";
+  margin-left: 3px;
+  color: #E5E6E9;
+  font-family: "FontAwesome";
+}
+.header .menu ul:first-child .menu__sub-menu a::after:hover {
+  content: "\f106";
+  font-family: "FontAwesome";
+}
+.header .menu ul:first-child .menu__sub-menu ul {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #f9f9f9;
+}
+.header .header-right {
+  width: 20%;
+}
+.header .header-right div {
+  display: inline-block;
+  font-size: 15px;
+}
+.header .header-right div:first-child {
+  margin-right: 3%;
+}
+.header .header-right div:first-child a {
+  color: #FFFFFF;
+  transition: 1s;
+}
+.header .header-right div:first-child a:before {
+  content: "\f095";
+  margin-right: 2px;
+  color: #33D2D3;
+  font-family: "FontAwesome";
+}
+.header .header-right div:first-child a:hover {
+  color: #33D2D3;
+}
+.header .header-right div:last-child a {
+  padding: 15px 8px;
+  border: 2px solid #33D2D3;
+  border-radius: 5px;
+  color: #33D2D3;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.header .header-right div:last-child a:hover {
+  background-color: #33D2D3;
+  color: #FFFFFF;
 }
