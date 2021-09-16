@@ -1,3 +1,36 @@
 @mixin radius($radius) {
     border-radius: $radius;
 }
+
+@mixin button-link {
+    a {
+        padding: 15px 33px;
+        @include radius(7px);
+        background-color: $primary-color3;
+        color: $primary-color1;
+        font-size: 20px;
+        text-transform: $text-trans;
+    }
+}
+
+@mixin capital-letter {
+    &::first-letter { text-transform: $text-trans; }
+}
+
+@mixin button-hover {
+    &:hover { background-color: $primary-color5; }
+}
+
+@mixin heading {
+    h2 {
+        margin-bottom: 25px;
+        color: #001D38;
+        font-size: 50px;
+        @include capital-letter;
+    }
+    p {
+        color: #B3ADB7;
+        font-size: 19px;
+        @include capital-letter;
+    }
+}

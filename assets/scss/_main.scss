@@ -1,9 +1,116 @@
 /*banner section start*/
 .banner {
+    position: relative;
     .wrapper {
         max-width: 1518px;
         width: 100%;
+        .banner__banner-left {
+            width: 37%;
+            position: absolute;
+            top: 320px;
+            left: 11%;
+            h2 {
+                margin-bottom: 35px;
+                color: $primary-color1;
+                font-size: 65px;
+                line-height: 75px;
+                @include capital-letter;
+            }
+            .button-link {
+                display: $display;
+                @include button-link;
+                @extend %transition;
+                @include button-hover;
+            }
+        }
+        .banner__banner-right {
+            width: 26%;
+            padding: 60px 3% 56px;
+            @include radius(10px);
+            position: absolute;
+            top: 220px;
+            right: 11%;
+            background-color: $primary-color1;  
+            h3 {
+                margin-bottom: 25px;
+                color: $primary-color4;
+                font-size: 32px;
+                font-weight: $weight;
+                text-align: $align;
+                @include capital-letter;
+            }
+            p {
+                margin-bottom: 60px;
+                color: $primary-color5;
+                font-size: 18px;
+                text-align: $align;
+            }
+            .form {
+                text-align: $align;
+                select {
+                    width: 96%;
+                    height: 50px;
+                    padding: 0 15px;
+                    border-color: #ECECEC;
+                    @include radius(7px);
+                    margin-bottom: 25px;
+                    color: #9CA0A7;
+                    font-weight: $weight;
+                    option { text-transform: $text-trans; }
+                }
+                p {
+                    margin: 30px 0 40px;
+                    color: #ADA89F;
+                    text-align: start;
+                    @include capital-letter;
+                }
+                .form__content {
+                    width: 96%;
+                    margin: 0 auto;
+                    .form__input {
+                        width: 100%;
+                        height: 50px;
+                        border: 1px solid $primary-color3;
+                        @include radius(7px);font-size: 18px;
+                        background-color: $primary-color3;
+                        color: $primary-color1;
+                        @extend %transition;
+                        @include button-hover;
+                    }
+                }
+            }
+        }
     }
 }
 
 /*banner section end*/
+
+/*loan offer section start*/
+
+.loan-offer {
+    padding: 200px 0 165px;
+    .loan-offer__heading {
+        text-align: $align;
+        @include heading;
+        p { margin-bottom: 100px; }
+    }
+    .loan-offer__list {
+        @extend %display;
+        justify-content: space-around;
+        .loan-offer__content {
+            width: 25%;
+            padding: 48px 3% 54px;
+            @include radius(8px);
+            background-image: linear-gradient(#0985F3,#0766BB);
+            .loan-offer__top {
+                figure {
+                    width: 24%;
+                    margin: 0 auto;
+                }
+            }
+    
+        }
+    }
+}
+
+/*loan offer section end*/
