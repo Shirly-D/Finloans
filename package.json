@@ -1,0 +1,28 @@
+{
+  "name": "loan",
+  "version": "1.0.0",
+  "description": "Get loan from Finloans",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirly-D/Finloans.git"
+  },
+  "keywords": [
+    "Finloans",
+    "loan"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shirly-D/Finloans/issues"
+  },
+  "homepage": "https://github.com/Shirly-D/Finloans#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.41.0"
+  }
+}
