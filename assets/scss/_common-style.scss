@@ -1,10 +1,20 @@
 %display {
-    display: flex;
-    justify-content: space-between;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 %icon {
     font-family: "FontAwesome";
     text-indent: 0;
     float: left;
+}
+
+%transition {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s
 }
