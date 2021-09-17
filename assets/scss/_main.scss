@@ -2,8 +2,7 @@
 .banner {
     position: relative;
     .wrapper {
-        max-width: 1518px;
-        width: 100%;
+        @include wrapper;
         .banner__banner-left {
             width: 37%;
             position: absolute;
@@ -232,5 +231,58 @@
     }
 }
 
-
 /*work section end*/
+
+/*frequent question section start*/
+
+.frequent-question {
+    .wrapper { @include wrapper; }
+    figure {
+        width: 50%;
+        display: $display;
+        vertical-align: top;
+    }
+    .frequent-question__content {
+        width: 42%;
+        margin-left: 6%;
+        display: $display;
+        h2 {
+            margin-bottom: 46px;
+            font-size: 50px;
+            @include capital-letter;
+        }
+        .frequent-question__list {
+            li {
+                margin-bottom: 30px;
+                display: $display1;
+                h4 {
+                    margin-bottom: 22px;
+                    color: #0F1127;
+                    font-size: 20px;
+                    @include capital-letter;
+                    &:first-child {
+                        &::before {
+                            content: "\f106";
+                        }
+                    }
+                    &::before {
+                        content: "\f107";
+                        margin-right: 8px;
+                        font-family: $icon-family;
+                    }
+                }
+                p {
+                    width: 66%;
+                    display: $display;
+                    color: #A5A9AB;
+                    font-size: 17px;
+                    @include capital-letter;
+                }
+                .frequent-question__text { display: none; }
+            }
+
+        }
+    }
+}
+
+/*frequent question section end*/
