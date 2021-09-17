@@ -1,28 +1,28 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
-  <title>Client</title>
-  
+  <title>Finloans</title>
+
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
+  <meta name="description" lang="en" content="Get loan from Finloans">
+
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
+  <meta name="keywords" lang="en" content="Finloans, loan">
+
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
   <meta http-equiv="Pragma" content="no-store, no-cache" />
   <meta http-equiv="Expires" content="0" /> -->
 
@@ -33,9 +33,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
   <!--[if lt IE 9]>  
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
   <![endif]-->
@@ -46,26 +46,353 @@
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      
+    <header class="header">
+      <div class="wrapper">
+        <h1 class="header__logo">
+          <a href="index.html" title="Finloans">
+            <img src="https://via.placeholder.com/52x52.png" alt="Finloans logo">
+            <span>finloans</span>
+          </a>
+        </h1>
+        <div class="menu">
+          <div class="menu__hamburger">
+            <div class="menu__bar">bar</div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#index.html" title="Home">home</a></li>
+              <li><a href="#fixme" title="Loan">loan</a></li>
+              <li><a href="#fixme" title="About">about</a></li>
+              <li class="menu__sub-menu"><a href="#fixme" title="Pages">pages</a>
+                <ul>
+                  <li><a href="#fixme" title="Loan page">loan page</a></li>
+                  <li><a href="#fixme" title="Offer page">offer page</a></li>
+                </ul>
+              </li>
+              <li class="menu__sub-menu"><a href="#fixme" title="Blog">blog</a>
+                <ul>
+                  <li><a href="#fixme" title="Loan">loan</a></li>
+                  <li><a href="#fixme" title="Offer">offer</a></li>
+                </ul>
+              </li>
+              <li><a href="#fixme" title="FAQ">FAQ</a></li>
+              <li><a href="#fixme" title="Contact">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div>
+            <a href="tel:+10673567367" title="Pnone no">+10 673 567 367</a>
+          </div>
+          <div>
+            <a href="#fixme" title="Apply for loan">apply for a loan</a>
+          </div>
+        </div>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
+      <section class="banner">
+        <div class="wrapper">
+          <figure>
+            <img src="https://via.placeholder.com/1518x996.png?text=." alt="Banner image">
+          </figure>
+          <div class="banner__banner-left">
+            <h2>get Loan for your Business growth or startup</h2>
+            <div class="button-link">
+              <a href="#fixme" title="How it works">how it works</a>
+            </div>
+          </div>
+          <div class="banner__banner-right">
+            <h3>how much do you want?</h3>
+            <p>we provide online instant cash loans with quick</p>
+            <form action="#fixme" method="POST" class="form">
+              <select name="amount" class="form__select-amount">
+                <option value="Amount">amount</option>
+                <option value="$3000">$3000</option>
+                <option value="$6000">$6000</option>
+                <option value="$10000">$10000</option>
+              </select>
+              <select name="month" class="form__select-month">
+                <option value="Month">month</option>
+                <option value="January">january</option>
+                <option value="February">february</option>
+                <option value="March">march</option>
+              </select>
+              <p>you have to pay: $0</p>
+              <div class="form__content">
+                <input type="submit" value="Continue" class="form__input">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="loan-offer">
+        <div class="wrapper">
+          <div class="loan-offer__heading">
+            <h2>what we offer for you</h2>
+            <p>we provide online instant loans with quich approval that suit your term</p>
+          </div>
+          <ul class="loan-offer__list">
+            <li class="loan-offer__content">
+              <div class="loan-offer__top">
+                <figure>
+                  <img src="https://via.placeholder.com/95x91.png" alt="Image">
+                </figure>
+                <p>home loan</p>
+                <p>$3000-$10000</p>
+              </div>
+              <ul class="loan-offer__bottom">
+                <li>borrow - $350 over 3 months</li>
+                <li>interest rate - 292% pa fixed</li>
+                <li>total amount paybale - $525.12</li>
+                <li>representative - 1,286% APR</li>
+              </ul>
+              <div class="loan-offer__button">
+                <a href="#fixme" title="Apply Now">apply now</a>
+              </div>
+            </li>
+            <li class="loan-offer__content">
+              <div class="loan-offer__top">
+                <figure>
+                  <img src="https://via.placeholder.com/95x91.png" alt="Image">
+                </figure>
+                <p>car loan</p>
+                <p>$3000-$10000</p>
+              </div>
+              <ul class="loan-offer__bottom">
+                <li>borrow - $350 over 3 months</li>
+                <li>interest rate - 292% pa fixed</li>
+                <li>total amount paybale - $525.12</li>
+                <li>representative - 1,286% APR</li>
+              </ul>
+              <div class="loan-offer__button">
+                <a href="#fixme" title="Apply Now">apply now</a>
+              </div>
+            </li>
+            <li class="loan-offer__content">
+              <div class="loan-offer__top">
+                <figure>
+                  <img src="https://via.placeholder.com/95x91.png" alt="Image">
+                </figure>
+                <p>education loan</p>
+                <p>$3000-$10000</p>
+              </div>
+              <ul class="loan-offer__bottom">
+                <li>borrow - $350 over 3 months</li>
+                <li>interest rate - 292% pa fixed</li>
+                <li>total amount paybale - $525.12</li>
+                <li>representative - 1,286% APR</li>
+              </ul>
+              <div class="loan-offer__button">
+                <a href="#fixme" title="Apply Now">apply now</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="choose-us">
+        <div class="wrapper">
+          <figure>
+            <img src="https://via.placeholder.com/600x654.png" alt="Image">
+          </figure>
+          <div class="choose-us_right">
+            <h2>why choose us?</h2>
+            <p>esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.
+              Apartments frequently or motionless on reasonable.</p>
+            <ul>
+              <li>loans with quick approval.</li>
+              <li>customize a loan based on the amount.</li>
+              <li>good credit profile and you have built your loan.</li>
+              <li>we provide online insrant cash loans.</li>
+            </ul>
+            <div class="button-link">
+              <a href="#fixme" title="About us">about us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work-section">
+        <div class="wrapper">
+          <div class="works-section__heading">
+            <h2>how it Works</h2>
+            <p>we provide online instant loans with quich approval that suit your term</p>
+          </div>
+          <ul class="work-section__list">
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/81x81.png" alt="Image">
+              </figure>
+              <h3>apply for loan</h3>
+              <p>we wil customize a loan based on the amount of cash your company need term</p>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/81x81.png" alt="Image">
+              </figure>
+              <h3>application review</h3>
+              <p>we wil customize a loan based on the amount of cash your company need term</p>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/81x81.png" alt="Image">
+              </figure>
+              <h3>get funding fast</h3>
+              <p>we wil customize a loan based on the amount of cash your company need term</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="frequent-question">
+        <div class="wrapper">
+          <figure>
+            <img src="https://via.placeholder.com/757x777.png" alt="Image">
+          </figure>
+          <div class="frequent-question__content">
+            <h2>frequently ask</h2>
+            <ul class="frequent-question__list">
+              <li>
+                <h4 class="frequent-question__heading_active">adieus who direct esteem It esteems luckily?</h4>
+                <p>esteem spirit temper too say adieus who direct esteem esteems luckily or picture placing drawing.</p>
+              </li>
+              <li>
+                <h4>who direct esteem It esteems?</h4>
+                <p class="frequent-question__text">esteem spirit temper too say adieus who direct esteem esteems luckily
+                  or picture placing drawing.</p>
+              </li>
+              <li>
+                <h4>duis consectetur feugiat auctor?</h4>
+                <p class="frequent-question__text">esteem spirit temper too say adieus who direct esteem esteems luckily
+                  or picture placing drawing.</p>
+              </li>
+              <li>
+                <h4>consectetur feugiat auctor?</h4>
+                <p class="frequent-question__text">esteem spirit temper too say adieus who direct esteem esteems luckily
+                  or picture placing drawing.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="comments">
+            <figure>
+              <img src="https://via.placeholder.com/254x254.png" alt="Image">
+            </figure>
+            <div class="comments__text">
+              <p>"working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate
+                human suffering through animal welfare when people might depend on livestock as their only source of
+                income or food."</p>
+              <p>-mickey mouse</p>
+            </div>
+          </div>
+          <ul class="frequent-question__image">
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/184x46.png" alt="Dopkin">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/184x46.png" alt="Verticle">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/184x46.png" alt="Shallow">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/184x46.png" alt="Diggo">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://via.placeholder.com/184x46.png" alt="Next">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="loan-apply">
+        <div class="wrapper">
+          <figure>
+            <img src="https://via.placeholder.com/1518x427.png?text=." alt="Image">
+          </figure>
+          <div class="loan-apply__text">
+            <p>apply for a loan for your startup, education or company</p>
+            <div>
+              <a href="#fixme" title="Apply Now">apply now</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
-
+    <footer>
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-top__logo">
+            <div>
+              <a href="#index.html" title="Finloans">
+                <img src="https://via.placeholder.com/49x49.png" alt="Logo">
+                <span>finloans</span>
+              </a>
+            </div>
+            <ul>
+              <li><a href="mailto:finloan@support.com">finloan@support.com</a></li>
+              <li><a href="tel:+108736726782">+10 873 672 6782</a></li>
+              <li>
+                <address>600/D, Green road, NewYork</address>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-top__right">
+            <li>
+              <h3 class="footer-top_heading">services</h3>
+              <ul>
+                <li><a href="#fixme" title="SEO/SEM">SEO/SEM</a></li>
+                <li><a href="#fixme" title="Web design">web design</a></li>
+                <li><a href="#fixme" title="Ecommerce">ecommerce</a></li>
+                <li><a href="#fixme" title="Digital marketing">digital marketing</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="footer-top_heading">useful links</h3>
+              <ul>
+                <li><a href="#fixme" title="About">about</a></li>
+                <li><a href="#fixme" title="Blog">blog</a></li>
+                <li><a href="#fixme" title="Contact">contact</a></li>
+                <li><a href="#fixme" title="Support">support</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <h3 class="footer-top_heading">subscribe</h3>
+            <form action="#fixme" method="POST">
+              <div>
+                <input type="text" class="email" placeholder="Enter your mail">
+              </div>
+              <div>
+                <input type="submit" class="submit" value="Subscribe">
+              </div>
+            </form>
+            <p>esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2021 All rights reserved</p>
+          <p>this template is made with <span> love</span> by <a href="#fixme" title="Colorlib"> Colorlib</a></p>
+        </div>
+      </div>
     </footer>
     <!--footer section end-->
 
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script> -->
 </body>
+
 </html>

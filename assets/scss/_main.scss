@@ -1,0 +1,373 @@
+/*banner section start*/
+.banner {
+    position: relative;
+    .wrapper {
+        @include wrapper;
+        .banner__banner-left {
+            width: 37%;
+            position: absolute;
+            top: 320px;
+            left: 11%;
+            h2 {
+                margin-bottom: 35px;
+                color: $primary-color1;
+                font-size: 65px;
+                line-height: 75px;
+                @include capital-letter;
+            }
+            .button-link {
+                display: $display;
+                @include button-link;
+                @extend %transition;
+                @include button-hover;
+            }
+        }
+        .banner__banner-right {
+            width: 26%;
+            padding: 60px 3% 56px;
+            @include radius(10px);
+            position: absolute;
+            top: 220px;
+            right: 11%;
+            background-color: $primary-color1;  
+            h3 {
+                margin-bottom: 25px;
+                color: $primary-color4;
+                font-size: 32px;
+                font-weight: $weight;
+                text-align: $align;
+                @include capital-letter;
+            }
+            p {
+                margin-bottom: 60px;
+                color: $primary-color5;
+                font-size: 18px;
+                text-align: $align;
+            }
+            .form {
+                text-align: $align;
+                select {
+                    width: 96%;
+                    height: 50px;
+                    padding: 0 15px;
+                    border-color: #ECECEC;
+                    @include radius(7px);
+                    margin-bottom: 25px;
+                    color: #9CA0A7;
+                    font-weight: $weight;
+                    option { text-transform: $text-trans; }
+                }
+                p {
+                    margin: 30px 0 40px;
+                    color: #ADA89F;
+                    text-align: start;
+                    @include capital-letter;
+                }
+                .form__content {
+                    width: 96%;
+                    margin: 0 auto;
+                    .form__input {
+                        width: 100%;
+                        height: 50px;
+                        border: 1px solid $primary-color3;
+                        @include radius(7px);font-size: 18px;
+                        background-color: $primary-color3;
+                        color: $primary-color1;
+                        @extend %transition;
+                        @include button-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*banner section end*/
+
+/*loan offer section start*/
+
+.loan-offer {
+    padding: 200px 0 165px;
+    position: relative;
+    .loan-offer__heading {
+        text-align: $align;
+        @include heading;
+        @include heading-before;
+        p { margin-bottom: 100px; }
+
+    }
+    .loan-offer__list {
+        @extend %display;
+        justify-content: space-around;
+        .loan-offer__content {
+            width: 31%;
+            padding: 48px 0 55px;
+            @include radius(8px);
+            background-image: linear-gradient(#0985F3,#0766BB);
+            .loan-offer__top {
+                padding: 0 6% 17px;
+                border-bottom: 1px solid $primary-color5;
+                figure {
+                    width: 24%;
+                    margin: 0 auto 40px;
+                }
+                p {
+                    margin-bottom: 20px;
+                    color: #D6DBEC; 
+                    font-size: 18px;
+                    text-align: $align;
+                    text-transform: $text-trans;
+                    &:last-child {
+                        color: $primary-color3;
+                        font-size: 32px;
+                    }
+                }
+            }
+            .loan-offer__bottom {
+                padding: 32px 15% 0;
+                li {
+                    margin-bottom: 12px;
+                    color: #F0F3F8;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    @include list-type;
+                }   
+            }
+            .loan-offer__button {
+                content: "";
+                padding: 30px 0 0;
+                display: block;
+                text-align: center;
+                @extend %transition;
+                @include button-link; 
+                a {
+                    width: 46%;
+                    padding: 15px 59px;
+                    @include button-hover;
+                }
+            }
+        }
+    }
+}
+
+/*loan offer section end*/
+
+/*choose us start*/
+
+.choose-us {
+    padding-bottom: 160px;
+    figure {
+        width: 47%;
+        display: $display;
+        vertical-align: top;
+    }
+    .choose-us_right {
+        width: 45%;
+        margin: 110px 0 40px 7%;
+        display: $display;
+        @include heading;
+        h2 { margin-bottom: 35px; }
+        p { 
+            margin-bottom: 30px;
+            line-height: 33px;
+        }
+        ul {
+            margin-bottom: 50px;
+            li {
+                margin-bottom: 10px;
+                display: $display1;
+                color: #202C54;
+                font-weight: $weight;
+                @include list-type;
+            }
+        }
+        .button-link {
+            @include button-link;
+            a {
+                @include button-hover;
+            }  
+        }
+    }
+}
+
+/*choose us end*/
+
+/*work section start*/
+
+.work-section {
+    padding: 200px 0;
+    position: relative;
+    background-color: #F5FBFF;
+    .works-section__heading {
+        text-align: $align;
+        @include heading;
+        @include heading-before;
+        p { margin-bottom: 80px; }
+    }
+    .work-section__list {
+        @extend %display;
+        li {
+            flex-basis: 30%;
+            figure {
+                width: 20%;
+                margin-bottom: 30px;
+                display: $display;
+                img { @include radius(50%); }
+            }
+            h3 {
+                margin-bottom: 22px;
+                color: #001D38;
+                font-size: 25px;
+                @include capital-letter;
+            }
+            p {
+                color: #9794A2;
+                font-size: 19px;
+                line-height: 28px;
+                @include capital-letter;
+            }
+        }
+        
+    }
+}
+
+/*work section end*/
+
+/*frequent question section start*/
+
+.frequent-question {
+    .wrapper { @include wrapper; }
+    figure {
+        &:first-child {
+            width: 50%;
+            display: $display;
+            vertical-align: top;
+        }
+    }
+    .frequent-question__content {
+        width: 42%;
+        margin: 130px 0 0 6%;
+        display: $display;
+        h2 {
+            margin-bottom: 46px;
+            font-size: 50px;
+            @include capital-letter;
+        }
+        .frequent-question__list {
+            li {
+                border-bottom: 1px solid #EAEAEA;
+                margin: 30px 0;
+                display: $display1;
+                h4 {
+                    margin-bottom: 22px;
+                    color: #0F1127;
+                    font-size: 20px;
+                    &::first-letter { text-transform: capitalize; }
+                    &::before {
+                        content: "\f107";
+                        margin-right: 8px;
+                        font-family: $icon-family;
+                    }
+                }
+                .frequent-question__heading_active {
+                    &::before {
+                        content: "\f106";
+                    }
+                }
+                p {
+                    width: 66%;
+                    margin-bottom: 20px;
+                    display: $display;
+                    color: #A5A9AB;
+                    font-size: 17px;
+                    @include capital-letter;
+                }
+                .frequent-question__text { display: none; }
+            }
+        } 
+    }
+    .comments {
+        width: 80%;
+        margin: 115px auto;
+        position: relative;
+        figure {
+            width: 20%;
+            &::after {
+                content: "\f10d";
+                padding: 23px 2%;
+                @include radius(50%);
+                position: absolute;
+                top: 175px;
+                left: 15%;
+                background-color: $primary-color3;
+                color: $primary-color1;
+                font-family: $icon-family;
+            }
+            img { @include radius(50%); }
+        }
+        .comments__text {
+            width: 61%;
+            margin: 44px 0 0 6%;
+            display: $display;
+            p {
+                @include capital-letter;
+                margin-bottom: 20px;
+                &:first-child {
+                    color: #484E61;
+                    font-size: 20px;
+                    font-weight: $weight;
+                }
+                &:last-child {
+                    font-size: 17px;
+                    color: #818991;
+                    text-transform: $text-trans;
+                }
+            }
+        }
+    }
+    .frequent-question__image {
+        width: 80%;
+        margin: 0 auto 160px;
+        @extend %display;
+        li {
+            figure{ width: 100%; }
+        }
+    }
+}
+
+/*frequent question section end*/
+
+/*loan apply section start*/
+
+.loan-apply {
+    position: relative;
+    .wrapper {
+        @include wrapper;
+        .loan-apply__text {
+            position: absolute;
+            top: 128px;
+            left: 9%;
+            p {
+                width: 60%;
+                display: $display;
+                color: $primary-color1;
+                font-size: 46px;
+                letter-spacing: 2px;
+                @include capital-letter;
+            }
+            div {
+                width: 30%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: end;
+                @include button-link;
+                a { 
+                    @extend %transition;
+                    @include button-hover; 
+                }
+            }
+        }
+    }   
+}
+
+/*loan apply section end*/

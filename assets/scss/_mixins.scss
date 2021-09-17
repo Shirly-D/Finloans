@@ -1,0 +1,95 @@
+@mixin wrapper {
+    max-width: 1518px;
+    width: 100%;
+}
+
+@mixin radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin button-link {
+    a {
+        padding: 15px 33px;
+        @include radius(7px);
+        background-color: $primary-color3;
+        color: $primary-color1;
+        font-size: 20px;
+        text-transform: $text-trans;
+    }
+}
+
+@mixin capital-letter {
+    &::first-letter { text-transform: $text-trans; }
+}
+
+@mixin button-hover {
+    &:hover { background-color: $primary-color5; }
+}
+
+@mixin heading {
+    h2 {
+        margin-bottom: 25px;
+        color: #001D38;
+        font-size: 50px;
+        @include capital-letter;
+    }
+    p {
+        color: #B3ADB7;
+        font-size: 19px;
+        @include capital-letter;
+    }
+}
+
+@mixin list-type {
+    &::before {
+        content: "\f111";
+        margin-right: 8px;
+        color: $primary-color3;
+        font-family: $icon-family;
+        font-size: 10px;
+    }
+}
+
+@mixin heading-before {
+    &::after {
+        content: "";
+        height: 4px;
+        width: 4%;
+        margin-top: 12px;
+        display: $display1;
+        background-color: $primary-color3;
+        position: absolute;
+        right: 48%;
+        top: 175px;
+    }
+}
+
+@mixin header-logo {
+    flex-basis: 20%;
+        display: inline-block;
+        a { 
+            width: 100%; 
+            @extend %transition;
+            img {
+                width: 17%;
+                border: 1px solid $primary-color2;
+                @include radius(50%);
+            }
+            span {
+                margin-left: 5%;
+                display: $display;
+                vertical-align: middle;
+                color: #FDFDFD;;
+                font-size: 28px;
+                text-transform: $text-trans;
+            }
+        }
+}
+
+@mixin footer-heading {
+    margin-bottom: 40px;
+    color: #0E0F27;
+    font-size: 25px;
+    font-weight: bold;
+    @include capital-letter;
+}
