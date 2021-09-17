@@ -126,7 +126,7 @@ li {
   justify-content: space-between;
 }
 
-.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button, .banner .wrapper .banner__banner-right .form .form__content .form__input, .banner .wrapper .banner__banner-left .button-link, .header .header-right div:first-child a, .header .menu ul:first-child li a, .header .header__logo a {
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__button, .banner .wrapper .banner__banner-right .form .form__content .form__input, .banner .wrapper .banner__banner-left .button-link, .header .header-right div:first-child a, .header .menu ul:first-child li a, .header .header__logo a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -434,13 +434,13 @@ li {
   font-family: "FontAwesome";
   font-size: 10px;
 }
-.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button {
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__button {
   content: "";
   padding: 30px 0 0;
   display: block;
   text-align: center;
 }
-.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a {
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__button a {
   padding: 15px 33px;
   border-radius: 7px;
   background-color: #33D2D3;
@@ -448,23 +448,27 @@ li {
   font-size: 20px;
   text-transform: capitalize;
 }
-.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a {
-  width: 59%;
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__button a {
+  width: 46%;
   padding: 15px 59px;
 }
-.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a:hover {
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__button a:hover {
   background-color: #A7AAB3;
 }
 
 /*loan offer section end*/
 /*choose us start*/
+.choose-us {
+  padding-bottom: 160px;
+}
 .choose-us figure {
   width: 47%;
   display: inline-block;
+  vertical-align: top;
 }
 .choose-us .choose-us_right {
   width: 45%;
-  margin-left: 7%;
+  margin: 110px 0 40px 7%;
   display: inline-block;
 }
 .choose-us .choose-us_right h2 {
@@ -488,6 +492,33 @@ li {
 .choose-us .choose-us_right p {
   margin-bottom: 30px;
   line-height: 33px;
+}
+.choose-us .choose-us_right ul {
+  margin-bottom: 50px;
+}
+.choose-us .choose-us_right ul li {
+  margin-bottom: 10px;
+  display: block;
+  color: #202C54;
+  font-weight: bold;
+}
+.choose-us .choose-us_right ul li::before {
+  content: "\f111";
+  margin-right: 8px;
+  color: #33D2D3;
+  font-family: "FontAwesome";
+  font-size: 10px;
+}
+.choose-us .choose-us_right .button-link a {
+  padding: 15px 33px;
+  border-radius: 7px;
+  background-color: #33D2D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.choose-us .choose-us_right .button-link a:hover {
+  background-color: #A7AAB3;
 }
 
 /*choose us end*/

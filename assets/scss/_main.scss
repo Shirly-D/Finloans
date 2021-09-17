@@ -128,26 +128,20 @@
                     color: #F0F3F8;
                     font-size: 17px;
                     text-transform: capitalize;
-                    &::before {
-                        content: "\f111";
-                        margin-right: 8px;
-                        color: $primary-color3;
-                        font-family: $icon-family;
-                        font-size: 10px;
-                    }
-                }
-                .loan-offer__button {
-                    content: "";
-                    padding: 30px 0 0;
-                    display: block;
-                    text-align: center;
-                    @extend %transition;
-                    @include button-link; 
-                    a {
-                        width: 59%;
-                        padding: 15px 59px;
-                        @include button-hover;
-                    }
+                    @include list-type;
+                }   
+            }
+            .loan-offer__button {
+                content: "";
+                padding: 30px 0 0;
+                display: block;
+                text-align: center;
+                @extend %transition;
+                @include button-link; 
+                a {
+                    width: 46%;
+                    padding: 15px 59px;
+                    @include button-hover;
                 }
             }
         }
@@ -159,19 +153,37 @@
 /*choose us start*/
 
 .choose-us {
+    padding-bottom: 160px;
     figure {
         width: 47%;
-        display: inline-block;
+        display: $display;
+        vertical-align: top;
     }
     .choose-us_right {
         width: 45%;
-        margin-left: 7%;
-        display: inline-block;
+        margin: 110px 0 40px 7%;
+        display: $display;
         @include heading;
         h2 { margin-bottom: 35px; }
         p { 
             margin-bottom: 30px;
             line-height: 33px;
+        }
+        ul {
+            margin-bottom: 50px;
+            li {
+                margin-bottom: 10px;
+                display: $display1;
+                color: #202C54;
+                font-weight: $weight;
+                @include list-type;
+            }
+        }
+        .button-link {
+            @include button-link;
+            a {
+                @include button-hover;
+            }  
         }
     }
 }

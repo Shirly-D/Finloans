@@ -35,3 +35,12 @@
     }
 }
 
+@mixin list-type {
+    &::before {
+        content: "\f111";
+        margin-right: 8px;
+        color: $primary-color3;
+        font-family: $icon-family;
+        font-size: 10px;
+    }
+}
