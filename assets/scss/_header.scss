@@ -9,25 +9,7 @@
         @extend %display; 
     }
     .header__logo {
-        flex-basis: 20%;
-        display: inline-block;
-        a { 
-            width: 100%; 
-            @extend %transition;
-            img {
-                width: 17%;
-                border: 1px solid $primary-color2;
-                @include radius(50%);
-            }
-            span {
-                margin-left: 5%;
-                display: $display;
-                vertical-align: middle;
-                color: #FDFDFD;;
-                font-size: 28px;
-                text-transform: $text-trans;
-            }
-        }
+        @include header-logo;
     }
     .menu {
         flex-basis: 35%;

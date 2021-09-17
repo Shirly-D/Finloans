@@ -63,3 +63,33 @@
         top: 175px;
     }
 }
+
+@mixin header-logo {
+    flex-basis: 20%;
+        display: inline-block;
+        a { 
+            width: 100%; 
+            @extend %transition;
+            img {
+                width: 17%;
+                border: 1px solid $primary-color2;
+                @include radius(50%);
+            }
+            span {
+                margin-left: 5%;
+                display: $display;
+                vertical-align: middle;
+                color: #FDFDFD;;
+                font-size: 28px;
+                text-transform: $text-trans;
+            }
+        }
+}
+
+@mixin footer-heading {
+    margin-bottom: 40px;
+    color: #0E0F27;
+    font-size: 25px;
+    font-weight: bold;
+    @include capital-letter;
+}
