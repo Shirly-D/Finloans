@@ -98,19 +98,83 @@
         @extend %display;
         justify-content: space-around;
         .loan-offer__content {
-            width: 25%;
-            padding: 48px 3% 54px;
+            width: 31%;
+            padding: 48px 0 55px;
             @include radius(8px);
             background-image: linear-gradient(#0985F3,#0766BB);
             .loan-offer__top {
+                padding: 0 6% 17px;
+                border-bottom: 1px solid $primary-color5;
                 figure {
                     width: 24%;
-                    margin: 0 auto;
+                    margin: 0 auto 40px;
+                }
+                p {
+                    margin-bottom: 20px;
+                    color: #D6DBEC; 
+                    font-size: 18px;
+                    text-align: $align;
+                    text-transform: $text-trans;
+                    &:last-child {
+                        color: $primary-color3;
+                        font-size: 32px;
+                    }
                 }
             }
-    
+            .loan-offer__bottom {
+                padding: 32px 15% 0;
+                li {
+                    margin-bottom: 12px;
+                    color: #F0F3F8;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    &::before {
+                        content: "\f111";
+                        margin-right: 8px;
+                        color: $primary-color3;
+                        font-family: $icon-family;
+                        font-size: 10px;
+                    }
+                }
+                .loan-offer__button {
+                    content: "";
+                    padding: 30px 0 0;
+                    display: block;
+                    text-align: center;
+                    @extend %transition;
+                    @include button-link; 
+                    a {
+                        width: 59%;
+                        padding: 15px 59px;
+                        @include button-hover;
+                    }
+                }
+            }
         }
     }
 }
 
 /*loan offer section end*/
+
+/*choose us start*/
+
+.choose-us {
+    figure {
+        width: 47%;
+        display: inline-block;
+    }
+    .choose-us_right {
+        width: 45%;
+        margin-left: 7%;
+        display: inline-block;
+        @include heading;
+        h2 { margin-bottom: 35px; }
+        p { 
+            margin-bottom: 30px;
+            line-height: 33px;
+        }
+    }
+}
+
+
+/*choose us end*/

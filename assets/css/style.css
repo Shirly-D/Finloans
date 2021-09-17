@@ -126,7 +126,7 @@ li {
   justify-content: space-between;
 }
 
-.banner .wrapper .banner__banner-right .form .form__content .form__input, .banner .wrapper .banner__banner-left .button-link, .header .header-right div:first-child a, .header .menu ul:first-child li a, .header .header__logo a {
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button, .banner .wrapper .banner__banner-right .form .form__content .form__input, .banner .wrapper .banner__banner-left .button-link, .header .header-right div:first-child a, .header .menu ul:first-child li a, .header .header__logo a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -394,14 +394,100 @@ li {
   justify-content: space-around;
 }
 .loan-offer .loan-offer__list .loan-offer__content {
-  width: 25%;
-  padding: 48px 3% 54px;
+  width: 31%;
+  padding: 48px 0 55px;
   border-radius: 8px;
   background-image: linear-gradient(#0985F3, #0766BB);
 }
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__top {
+  padding: 0 6% 17px;
+  border-bottom: 1px solid #A7AAB3;
+}
 .loan-offer .loan-offer__list .loan-offer__content .loan-offer__top figure {
   width: 24%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__top p {
+  margin-bottom: 20px;
+  color: #D6DBEC;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__top p:last-child {
+  color: #33D2D3;
+  font-size: 32px;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom {
+  padding: 32px 15% 0;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom li {
+  margin-bottom: 12px;
+  color: #F0F3F8;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom li::before {
+  content: "\f111";
+  margin-right: 8px;
+  color: #33D2D3;
+  font-family: "FontAwesome";
+  font-size: 10px;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button {
+  content: "";
+  padding: 30px 0 0;
+  display: block;
+  text-align: center;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a {
+  padding: 15px 33px;
+  border-radius: 7px;
+  background-color: #33D2D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a {
+  width: 59%;
+  padding: 15px 59px;
+}
+.loan-offer .loan-offer__list .loan-offer__content .loan-offer__bottom .loan-offer__button a:hover {
+  background-color: #A7AAB3;
 }
 
 /*loan offer section end*/
+/*choose us start*/
+.choose-us figure {
+  width: 47%;
+  display: inline-block;
+}
+.choose-us .choose-us_right {
+  width: 45%;
+  margin-left: 7%;
+  display: inline-block;
+}
+.choose-us .choose-us_right h2 {
+  margin-bottom: 25px;
+  color: #001D38;
+  font-size: 50px;
+}
+.choose-us .choose-us_right h2::first-letter {
+  text-transform: capitalize;
+}
+.choose-us .choose-us_right p {
+  color: #B3ADB7;
+  font-size: 19px;
+}
+.choose-us .choose-us_right p::first-letter {
+  text-transform: capitalize;
+}
+.choose-us .choose-us_right h2 {
+  margin-bottom: 35px;
+}
+.choose-us .choose-us_right p {
+  margin-bottom: 30px;
+  line-height: 33px;
+}
+
+/*choose us end*/
