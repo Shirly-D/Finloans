@@ -117,7 +117,7 @@ li {
   margin: 0 auto;
 }
 
-.work-section .work-section__list, .loan-offer .loan-offer__list, .header .menu ul:first-child, .header .wrapper {
+.frequent-question .frequent-question__image, .work-section .work-section__list, .loan-offer .loan-offer__list, .header .menu ul:first-child, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,14 +606,14 @@ li {
   max-width: 1518px;
   width: 100%;
 }
-.frequent-question figure {
+.frequent-question figure:first-child {
   width: 50%;
   display: inline-block;
   vertical-align: top;
 }
 .frequent-question .frequent-question__content {
   width: 42%;
-  margin-left: 6%;
+  margin: 130px 0 0 6%;
   display: inline-block;
 }
 .frequent-question .frequent-question__content h2 {
@@ -624,7 +624,8 @@ li {
   text-transform: capitalize;
 }
 .frequent-question .frequent-question__content .frequent-question__list li {
-  margin-bottom: 30px;
+  border-bottom: 1px solid #EAEAEA;
+  margin: 30px 0;
   display: block;
 }
 .frequent-question .frequent-question__content .frequent-question__list li h4 {
@@ -635,16 +636,17 @@ li {
 .frequent-question .frequent-question__content .frequent-question__list li h4::first-letter {
   text-transform: capitalize;
 }
-.frequent-question .frequent-question__content .frequent-question__list li h4:first-child::before {
-  content: "\f106";
-}
 .frequent-question .frequent-question__content .frequent-question__list li h4::before {
   content: "\f107";
   margin-right: 8px;
   font-family: "FontAwesome";
 }
+.frequent-question .frequent-question__content .frequent-question__list li .frequent-question__heading_active::before {
+  content: "\f106";
+}
 .frequent-question .frequent-question__content .frequent-question__list li p {
   width: 66%;
+  margin-bottom: 20px;
   display: inline-block;
   color: #A5A9AB;
   font-size: 17px;
@@ -655,5 +657,57 @@ li {
 .frequent-question .frequent-question__content .frequent-question__list li .frequent-question__text {
   display: none;
 }
+.frequent-question .comments {
+  width: 80%;
+  margin: 115px auto;
+  position: relative;
+}
+.frequent-question .comments figure {
+  width: 20%;
+}
+.frequent-question .comments figure::after {
+  content: "\f10d";
+  padding: 23px 2%;
+  border-radius: 50%;
+  position: absolute;
+  top: 175px;
+  left: 15%;
+  background-color: #33D2D3;
+  color: #FFFFFF;
+  font-family: "FontAwesome";
+}
+.frequent-question .comments figure img {
+  border-radius: 50%;
+}
+.frequent-question .comments .comments__text {
+  width: 61%;
+  margin: 44px 0 0 6%;
+  display: inline-block;
+}
+.frequent-question .comments .comments__text p {
+  margin-bottom: 20px;
+}
+.frequent-question .comments .comments__text p::first-letter {
+  text-transform: capitalize;
+}
+.frequent-question .comments .comments__text p:first-child {
+  color: #484E61;
+  font-size: 20px;
+  font-weight: bold;
+}
+.frequent-question .comments .comments__text p:last-child {
+  font-size: 17px;
+  color: #818991;
+  text-transform: capitalize;
+}
+.frequent-question .frequent-question__image {
+  width: 80%;
+  margin: 0 auto 160px;
+}
+.frequent-question .frequent-question__image li figure {
+  width: 100%;
+}
 
 /*frequent question section end*/
+/*loan apply section start*/
+/*loan apply section end*/

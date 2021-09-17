@@ -238,13 +238,15 @@
 .frequent-question {
     .wrapper { @include wrapper; }
     figure {
-        width: 50%;
-        display: $display;
-        vertical-align: top;
+        &:first-child {
+            width: 50%;
+            display: $display;
+            vertical-align: top;
+        }
     }
     .frequent-question__content {
         width: 42%;
-        margin-left: 6%;
+        margin: 130px 0 0 6%;
         display: $display;
         h2 {
             margin-bottom: 46px;
@@ -253,26 +255,28 @@
         }
         .frequent-question__list {
             li {
-                margin-bottom: 30px;
+                border-bottom: 1px solid #EAEAEA;
+                margin: 30px 0;
                 display: $display1;
                 h4 {
                     margin-bottom: 22px;
                     color: #0F1127;
                     font-size: 20px;
-                    @include capital-letter;
-                    &:first-child {
-                        &::before {
-                            content: "\f106";
-                        }
-                    }
+                    &::first-letter { text-transform: capitalize; }
                     &::before {
                         content: "\f107";
                         margin-right: 8px;
                         font-family: $icon-family;
                     }
                 }
+                .frequent-question__heading_active {
+                    &::before {
+                        content: "\f106";
+                    }
+                }
                 p {
                     width: 66%;
+                    margin-bottom: 20px;
                     display: $display;
                     color: #A5A9AB;
                     font-size: 17px;
@@ -280,9 +284,60 @@
                 }
                 .frequent-question__text { display: none; }
             }
-
+        } 
+    }
+    .comments {
+        width: 80%;
+        margin: 115px auto;
+        position: relative;
+        figure {
+            width: 20%;
+            &::after {
+                content: "\f10d";
+                padding: 23px 2%;
+                @include radius(50%);
+                position: absolute;
+                top: 175px;
+                left: 15%;
+                background-color: $primary-color3;
+                color: $primary-color1;
+                font-family: $icon-family;
+            }
+            img { @include radius(50%); }
+        }
+        .comments__text {
+            width: 61%;
+            margin: 44px 0 0 6%;
+            display: $display;
+            p {
+                @include capital-letter;
+                margin-bottom: 20px;
+                &:first-child {
+                    color: #484E61;
+                    font-size: 20px;
+                    font-weight: $weight;
+                }
+                &:last-child {
+                    font-size: 17px;
+                    color: #818991;
+                    text-transform: $text-trans;
+                }
+            }
+        }
+    }
+    .frequent-question__image {
+        width: 80%;
+        margin: 0 auto 160px;
+        @extend %display;
+        li {
+            figure{ width: 100%; }
         }
     }
 }
 
 /*frequent question section end*/
+
+/*loan apply section start*/
+
+
+/*loan apply section end*/
