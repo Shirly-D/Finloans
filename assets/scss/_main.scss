@@ -188,5 +188,24 @@
     }
 }
 
-
 /*choose us end*/
+
+/*work section start*/
+
+.work-section {
+    padding: 200px 0;
+    background-color: #F5FBFF;
+    .work-section__heading {
+        content: "";
+  height: 3px;
+  width: 60px;
+  margin-top: 12px;
+  display: block;
+  background-color: #0c9a0c;
+  position: absolute;
+  right: 48%;
+    }
+}
+
+
+/*work section end*/
