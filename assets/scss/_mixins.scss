@@ -44,3 +44,17 @@
         font-size: 10px;
     }
 }
+
+@mixin heading-before {
+    &::after {
+        content: "";
+        height: 4px;
+        width: 4%;
+        margin-top: 12px;
+        display: $display1;
+        background-color: $primary-color3;
+        position: absolute;
+        right: 48%;
+        top: 175px;
+    }
+}

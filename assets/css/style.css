@@ -117,7 +117,7 @@ li {
   margin: 0 auto;
 }
 
-.loan-offer .loan-offer__list, .header .menu ul:first-child, .header .wrapper {
+.work-section .work-section__list, .loan-offer .loan-offer__list, .header .menu ul:first-child, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,6 +368,7 @@ li {
 /*loan offer section start*/
 .loan-offer {
   padding: 200px 0 165px;
+  position: relative;
 }
 .loan-offer .loan-offer__heading {
   text-align: center;
@@ -386,6 +387,17 @@ li {
 }
 .loan-offer .loan-offer__heading p::first-letter {
   text-transform: capitalize;
+}
+.loan-offer .loan-offer__heading::after {
+  content: "";
+  height: 4px;
+  width: 4%;
+  margin-top: 12px;
+  display: block;
+  background-color: #33D2D3;
+  position: absolute;
+  right: 48%;
+  top: 175px;
 }
 .loan-offer .loan-offer__heading p {
   margin-bottom: 100px;
@@ -525,17 +537,67 @@ li {
 /*work section start*/
 .work-section {
   padding: 200px 0;
+  position: relative;
   background-color: #F5FBFF;
 }
-.work-section .work-section__heading {
+.work-section .works-section__heading {
+  text-align: center;
+}
+.work-section .works-section__heading h2 {
+  margin-bottom: 25px;
+  color: #001D38;
+  font-size: 50px;
+}
+.work-section .works-section__heading h2::first-letter {
+  text-transform: capitalize;
+}
+.work-section .works-section__heading p {
+  color: #B3ADB7;
+  font-size: 19px;
+}
+.work-section .works-section__heading p::first-letter {
+  text-transform: capitalize;
+}
+.work-section .works-section__heading::after {
   content: "";
-  height: 3px;
-  width: 60px;
+  height: 4px;
+  width: 4%;
   margin-top: 12px;
   display: block;
-  background-color: #0c9a0c;
+  background-color: #33D2D3;
   position: absolute;
   right: 48%;
+  top: 175px;
+}
+.work-section .works-section__heading p {
+  margin-bottom: 80px;
+}
+.work-section .work-section__list li {
+  flex-basis: 30%;
+}
+.work-section .work-section__list li figure {
+  width: 20%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.work-section .work-section__list li figure img {
+  border-radius: 50%;
+}
+.work-section .work-section__list li h3 {
+  margin-bottom: 22px;
+  color: #001D38;
+  font-size: 25px;
+}
+.work-section .work-section__list li h3::first-letter {
+  text-transform: capitalize;
+}
+.work-section .work-section__list li p {
+  color: #9794A2;
+  font-size: 19px;
+  line-height: 28px;
+}
+.work-section .work-section__list li p::first-letter {
+  text-transform: capitalize;
 }
 
 /*work section end*/
