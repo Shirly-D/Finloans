@@ -339,5 +339,35 @@
 
 /*loan apply section start*/
 
+.loan-apply {
+    position: relative;
+    .wrapper {
+        @include wrapper;
+        .loan-apply__text {
+            position: absolute;
+            top: 128px;
+            left: 9%;
+            p {
+                width: 60%;
+                display: $display;
+                color: $primary-color1;
+                font-size: 46px;
+                letter-spacing: 2px;
+                @include capital-letter;
+            }
+            div {
+                width: 30%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: end;
+                @include button-link;
+                a { 
+                    @extend %transition;
+                    @include button-hover; 
+                }
+            }
+        }
+    }   
+}
 
 /*loan apply section end*/
